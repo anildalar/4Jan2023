@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS For in Loop statement ()</title>
+    </head>
+    <body>
+        
+        <script>
+            //I can write the js code before the closing of body tag
+            let student1={
+                //P:V
+                //Key:Value
+                name:"Vishnu", //String value
+                surname:"Jat",
+                address:"Manasa",
+                contact:97979878987, //Number value
+                friends:["pankaj","Pushpendra"]  //Array Value
+            }; // {} is a JS Object
+
+            /*
+                {
+                    //1. Property:Value
+
+                    //2. Method
+
+                }
+            */
+            /*
+            for (key in object) {
+                // code block to be executed
+            }
+            */
+            /*
+            How many ways to access the js object Value?
+
+            1.objectName.property   . = member selection operator
+            2.objectName["property"] 
+            3.objectName[expression]
+            */
+            for(x in student1){ // Key = Properties
+                console.log(student1[`${x}`]);
+                console.log(student1[x]);
+
+            }
+
+            //
+        </script>
+
+        <script>
+            //For of  
+
+
+            let name="ANIL DOLLOR"; //String is an iterable object
+            /*
+            for (variable of iterable) {
+                // code block to be executed
+            }
+            */
+            for(x of name){
+                console.log(x);
+            }
+
+            let students = ['Anil','Bhanu',"Chandu",`Dinesh`]; // [] is an Array
+            
+        
+            
+            for(student of students ){
+                console.log(student);
+            }
+
+        </script>
+    </body>
+</html>

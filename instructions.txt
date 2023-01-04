@@ -1,0 +1,17 @@
+Javascript Object
+
+let student1= {
+			name:"",
+			surname:""
+}
+
+For in Loop statement
+
+How many ways to access the js object Value?
+
+1.objectName.property 
+2.objectName["property"] 
+3.objectName[expression]
+
+
+"ANIL"
